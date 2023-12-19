@@ -7,15 +7,17 @@
     <!-- 
         스타일시트 작성 방법
         (1) 내부스타일 : style태그 내 스타일 지정
-        (2) 내부스타일 : link태그로 외부 CSS 파일 스타일 지정
-        (3) 스타일 : link태그로 외부 CSS 파일 스타일 지정
+        (2) 외부스타일 : link태그로 외부 CSS 파일 스타일 지정
+        (3) 인라인스타일 : 요소 내 style 속성으로 스타일 지정
      -->
+
+     <!-- (1) 내부스타일 -->
     <style>
         /* 
-            style태그 : CSS 작성을 위한 태그
-            ** 작성 위치? head 끝태그 위
+        style태그 : CSS 작성을 위한 태그
+        ** 작성 위치? head 끝태그 위
 
-            CSS 문법 : 선택자 { 스타일속성 : 솏성갑시}
+        CSS 문법 : 선택자 { 스타일속성 : 속성값; }
         */
         h1{
             color: red;
@@ -27,7 +29,7 @@
     </style>
 
     <!-- (2) 외부스타일 -->
-    <link rel="stylesheet" href="./ex01css.css">        
+    <link rel="stylesheet" href="./ex01css.css">
 </head>
 <body>
     <h1>빨강</h1>

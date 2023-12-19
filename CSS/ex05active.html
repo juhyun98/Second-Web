@@ -9,7 +9,7 @@
         반응선택자 : 사용자의 반응으로 생성되는 특정한 상태를 선택
 
         마우스를 올렸을 때 => :hover
-        마우스를 클릭했을 때 => :active
+        마우스 클릭했을 때 => :active
         */
         div:hover{
             color: red;
@@ -18,22 +18,22 @@
             background-color: lightpink;
         }
 
-        h3:hover + p{
-            color: pink;
-        }
         /* 
         (mission) h3 요소에 마우스를 올렸을 때 p 요소의 스타일을 변경!
 
         기준 => h3에 마우스가 올라간 반응 상태
         선택 => h3의 형제인 p
         */
+        h3:hover+p{
+            color: green;
+        }
     </style>
 </head>
 <body>
     <div>Hello World!</div>
 
     <br><br><br>
-    
+
     <h3>Mouse Over</h3>
     <p>Color Change</p>
 </body>

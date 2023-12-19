@@ -21,10 +21,11 @@
             */
             display: flex;
 
-            /* flex-direction: column; */
+            /* flex-direction: row; */
             /* 
             flex-direction : 아이템이 배치되는 축(메인축)의 방향을 결정하는 속성
-            => row(기본값, 가로), row-reverse(가로 역순), column(세로), column-reverse(세로 역순)
+            => row(기본값, 가로), row-reverse(가로 역순), 
+               column(세로), column-reverse(세로 역순)
             */
 
             flex-wrap: wrap;
@@ -36,11 +37,11 @@
             justify-content: space-evenly;
             /* 
             justify-content : 아이템의 메인축 방향 정렬 지정
-            => flex-start(기본값, 시작점 정렬), flex-end(끝점 정렬), center(가운데 정렬)
-               space-between : 아이템 둘레(좌우) 균일한 여백
+            => flex-start(기본값, 시작점 정렬), flex-end(끝점 정렬), center(가운데 정렬),
+               space-around : 아이템 둘레(좌우) 균일한 여백
                space-between : 아이템 사이 균일한 여백 (양 끝 여백X)
                space-evenly : 아이템 사이 + 양 끝 균일한 여백
-            align-items : 아이템 수직충 방향 정렬 지정
+            algin-items : 아이템의 수직축 방향 정렬 지정
             */
         }
         .item{
@@ -57,9 +58,7 @@
             */
             display: flex;
 
-            /* 
-            
-            */
+            /* 메인축 방향 아이템 가운데 정렬 */
             justify-content: center;
 
             /* 수직축 방향 아이템 가운데 정렬 */
@@ -68,8 +67,8 @@
     </style>
 </head>
 <body>
+    <!-- .container>.item{box$}*6 -->
     <div class="container">
-        <!-- .container > .item{box$}*6 -->
         <div class="item">box1</div>
         <div class="item">box2</div>
         <div class="item">box3</div>
@@ -77,5 +76,5 @@
         <div class="item">box5</div>
         <div class="item">box6</div>
     </div>
-    </body>
+</body>
 </html>
